@@ -6,10 +6,9 @@ XSBC-Original-Maintainer: Thomi Richards <thomi.richards@canonical.com>
 Build-Depends: debhelper (>= 9.0.0),
                dh-python,
                dvipng,
-               gir1.2-gconf-2.0,
                gir1.2-gtk-3.0,
                gir1.2-ibus-1.0,
-               gir1.2-ubuntu-app-launch-2 | gir1.2-upstart-app-launch-2,
+               gir1.2-ubuntu-app-launch-3 | gir1.2-ubuntu-app-launch-2,
                graphviz,
                libjs-jquery,
                libjs-underscore,
@@ -28,6 +27,7 @@ Build-Depends: debhelper (>= 9.0.0),
                python3-setuptools,
                python3-sphinx,
                python3-subunit,
+               python3-systemd,
                python3-testscenarios,
                python3-testtools,
                python3-tz,
@@ -38,15 +38,16 @@ Build-Depends: debhelper (>= 9.0.0),
                upstart,
 Standards-Version: 3.9.5
 Homepage: https://launchpad.net/autopilot
-Vcs-bzr: https://code.launchpad.net/+branch/ubuntu/autopilot
+Vcs-Bzr: https://code.launchpad.net/~autopilot/autopilot/trunk
 X-Python-Version: >= 2.7
 X-Python3-Version: >= 3.3
 
 Package: python3-autopilot
 Architecture: all
-Depends: gir1.2-ubuntu-app-launch-2 | gir1.2-upstart-app-launch-2,
+Depends: gir1.2-ubuntu-app-launch-3 | gir1.2-ubuntu-app-launch-2,
          libjs-jquery,
          libjs-underscore,
+         mir-utils,
          python3-dateutil,
          python3-dbus,
          python3-decorator,
@@ -57,14 +58,14 @@ Depends: gir1.2-ubuntu-app-launch-2 | gir1.2-upstart-app-launch-2,
          python3-pil,
          python3-psutil,
          python3-subunit,
+         python3-systemd,
          python3-testscenarios,
          python3-testtools,
          python3-tz,
          udev,
          ${misc:Depends},
          ${python3:Depends},
-Recommends: gir1.2-gconf-2.0,
-            gir1.2-glib-2.0,
+Recommends: gir1.2-glib-2.0,
             gir1.2-gtk-3.0,
             gir1.2-ibus-1.0,
             libautopilot-gtk (>= 1.4),
@@ -109,7 +110,6 @@ Architecture: all
 Section: metapackages
 Depends: at-spi2-core,
          bamfdaemon,
-         gir1.2-gconf-2.0,
          gir1.2-glib-2.0,
          gir1.2-gtk-3.0,
          python3-autopilot,
