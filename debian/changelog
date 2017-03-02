@@ -1,3 +1,10 @@
+autopilot (1.6.0+17.04.20170302-0ubuntu1) zesty; urgency=medium
+
+  [ Santiago Baldassin, Tarmac ]
+  * New upstream release.
+
+ -- Rodney Dawes <rodney.dawes@canonical.com>  Thu, 02 Mar 2017 18:50:40 +0000
+
 autopilot (1.6.0+16.10.20160818.1-0ubuntu1) yakkety; urgency=medium
 
   * Autopilot proxy object
