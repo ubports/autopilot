@@ -1,3 +1,10 @@
+autopilot (1.6.0+17.04.20170313-0ubuntu1) zesty; urgency=medium
+
+  [ Tarmac ]
+  * New release
+
+ -- Jean-Baptiste Lallement <jeanbaptiste.lallement@gmail.com>  Mon, 13 Mar 2017 17:21:58 +0000
+
 autopilot (1.6.0+17.04.20170302-0ubuntu1) zesty; urgency=medium
 
   [ Santiago Baldassin, Tarmac ]
