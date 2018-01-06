@@ -1,3 +1,9 @@
+autopilot (1.6.1+ubports) xenial; urgency=medium
+
+  * Imported to UBports
+
+ -- UBports auto importer <infra@ubports.com>  Sat, 06 Jan 2018 13:04:04 +0000
+
 autopilot (1.6.0+17.04.20170313-0ubuntu1) zesty; urgency=medium
 
   [ Tarmac ]
